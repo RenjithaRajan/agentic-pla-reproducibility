@@ -1,0 +1,5 @@
+partition,n,% protein > 1024 (used),% SMILES > 256 tok (used),% pocket > 128,% protein > 512 (legacy),% SMILES > 128 tok (legacy)
+train,4690,0.6,4.69,0.0,9.17,24.07
+val,1005,0.1,5.07,0.0,7.76,26.27
+test,1005,0.7,3.78,0.0,9.75,21.59
+casf,107,0.0,0.0,0.0,12.15,0.93

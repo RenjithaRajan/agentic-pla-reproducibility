@@ -1,0 +1,26 @@
+\begin{tabular}{lllrlllrrrrl}
+\toprule
+method & train_data & test_set & n_test & label & split & comparable & RMSE & Pearson & MAE & SD & source \\
+\midrule
+No retrieval (stage-1 P+L regressor) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.212 & 0.744 & 0.901 & 1.211 & this work \\
+Ligand-only MLP (MolT5) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.394 & 0.640 & 1.084 & 1.393 & this work \\
+Protein-only MLP (ProtBERT) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.474 & 0.584 & 1.090 & 1.471 & this work \\
+kNN uniform K=3 & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.395 & 0.700 & 1.034 & 1.294 & this work \\
+kNN uniform K=5 & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.395 & 0.702 & 1.042 & 1.292 & this work \\
+kNN uniform K=7 & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.408 & 0.699 & 1.055 & 1.295 & this work \\
+Agentic uniform weights K=3 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.256 & 0.723 & 0.938 & 1.252 & this work \\
+Agentic K=3 (main) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.265 & 0.718 & 0.943 & 1.261 & this work \\
+Agentic K=5 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.259 & 0.723 & 0.945 & 1.253 & this work \\
+Agentic K=7 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & PDBbind held-out test (n=1005) & 1005 & pKd (Kd only) & random 70/15/15 (seed 42) & yes (re-run, identical pipeline) & 1.267 & 0.717 & 0.949 & 1.263 & this work \\
+No retrieval (stage-1 P+L regressor) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.281 & 0.746 & 0.992 & 1.286 & this work \\
+Ligand-only MLP (MolT5) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.466 & 0.648 & 1.121 & 1.471 & this work \\
+Protein-only MLP (ProtBERT) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.736 & 0.454 & 1.379 & 1.721 & this work \\
+kNN uniform K=3 & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.221 & 0.791 & 0.959 & 1.183 & this work \\
+kNN uniform K=5 & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.219 & 0.791 & 0.970 & 1.182 & this work \\
+kNN uniform K=7 & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.248 & 0.785 & 0.977 & 1.197 & this work \\
+Agentic uniform weights K=3 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.200 & 0.783 & 0.940 & 1.201 & this work \\
+Agentic K=3 (main) [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.198 & 0.783 & 0.939 & 1.200 & this work \\
+Agentic K=5 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.202 & 0.781 & 0.947 & 1.207 & this work \\
+Agentic K=7 [ensemble] & PDBbind v2020 Kd-only train partition (n=4690) & CASF-2016 Kd subset (n=107 of 285) & 107 & pKd (Kd only) & external & yes (re-run, identical pipeline) & 1.213 & 0.776 & 0.958 & 1.218 & this work \\
+\bottomrule
+\end{tabular}
