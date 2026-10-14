@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Agentic Retrieval Augmented Framework for Protein Ligand Binding Affinity Prediction Using Pocket Embeddings"
+type: software
+authors:
+  - family-names: Rajan
+    given-names: Renjitha
+    # add co-authors here, in the same order as the paper
+version: 1.0.0
+date-released: 2026-10-14
+repository-code: "https://github.com/RenjithaRajan/agentic-pla-reproducibility"
+license: MIT
+# doi: 10.5281/zenodo.XXXXXXX   # uncomment and fill in after Zenodo archiving
