@@ -1,0 +1,100 @@
+{
+  "config": {
+    "seed": 42,
+    "split_mode": "random",
+    "chain_policy": "contact_unique",
+    "pocket_cutoff": 5.0,
+    "min_protein_len": 50
+  },
+  "label_rejections_from_index": {
+    "not_kd": 11994,
+    "kd_censored_or_approx": 108
+  },
+  "complex_drops": {
+    "no_usable_kd_label": 11924,
+    "casf_excluded": 285,
+    "protein_too_short": 30,
+    "ligand_rdkit_failed": 1
+  },
+  "duplicate_pairs_removed": 97,
+  "n_complexes": 6700,
+  "unique_counts": {
+    "proteins_raw": 4667,
+    "proteins_truncated": 4634,
+    "ligands_raw_smiles": 5253,
+    "ligands_canonical_smiles": 5218,
+    "unique_pdb_ids": 6700,
+    "unique_pairs": 6700
+  },
+  "protein_length": {
+    "n": 6700,
+    "min": 50.0,
+    "median": 257.0,
+    "max": 2701.0,
+    "mean": 288.32611940298506,
+    "sd": 185.1493557770117
+  },
+  "protein_frac_truncated": 0.09343283582089552,
+  "protein_median_residues_removed": 148.0,
+  "protein_frac_residues_X": 7.195417709527716e-05,
+  "protein_frac_complexes_with_X": 0.001791044776119403,
+  "smiles_token_length": {
+    "n": 6700,
+    "min": 5.0,
+    "median": 64.0,
+    "max": 499.0,
+    "mean": 93.7734328358209,
+    "sd": 75.31911817621409
+  },
+  "smiles_frac_truncated": 0.24597014925373134,
+  "pocket_frac_nonempty": 1.0,
+  "pocket_n_res": {
+    "n": 6700,
+    "min": 2.0,
+    "median": 18.0,
+    "max": 58.0,
+    "mean": 19.210149253731345,
+    "sd": 6.796224916234871
+  },
+  "labels_per_split": {
+    "train": {
+      "n": 4690,
+      "min": 0.6020599913279624,
+      "median": 5.769551078621726,
+      "max": 15.221848749616356,
+      "mean": 5.849907031995616,
+      "sd": 1.7222338137531739
+    },
+    "val": {
+      "n": 1005,
+      "min": 1.3010299956639813,
+      "median": 5.769551078621726,
+      "max": 13.0,
+      "mean": 5.856736559797285,
+      "sd": 1.7530220786253257
+    },
+    "test": {
+      "n": 1005,
+      "min": 0.6575773191777937,
+      "median": 5.958607314841775,
+      "max": 15.0,
+      "mean": 5.957628801872662,
+      "sd": 1.8116740462942122
+    }
+  },
+  "overlap_train_test": {
+    "proteins_in_both": 275,
+    "ligands_in_both": 202,
+    "frac_test_complexes_with_protein_seen_in_train": 0.39104477611940297,
+    "frac_test_complexes_with_ligand_seen_in_train": 0.26865671641791045,
+    "n_test_proteins": 873,
+    "n_test_ligands": 929
+  },
+  "casf2016": {
+    "n_complexes": 0,
+    "drops": {
+      "no_usable_kd_label": 178,
+      "missing_files": 107
+    }
+  }
+}
